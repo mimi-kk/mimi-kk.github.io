@@ -1,0 +1,255 @@
+@import "mixins"
+
+.recipe-description
+	margin: 0 auto
+	width: 100%
+	font-family: "Josefin Regular"
+	font-size: 19px
+	line-height: 26px
+
+	section
+		padding-bottom: 13px
+
+	h4
+		margin: 13px 0 26px
+		font-size: 26px
+		line-height: 30px
+
+	.slider
+		margin: 13px 0
+
+	.content
+		width: 80%
+		margin: 0 auto
+		+flex
+		+flex-wrap
+
+		.head-column
+			order: 1
+			flex: 1 100%
+			border-bottom: 1px dashed #5D9E9B
+			margin: 13px 0
+			
+			+flex
+			+flex-direction-column
+			+flex-wrap
+
+			h4
+				margin: 7px 0
+
+			ul
+				+flex
+				+flex-direction-row
+				+flex-wrap
+
+				li
+					padding-right: 4px
+
+					&.label
+						color: #5D9E9B
+		
+		.side-column
+			order: 2
+			flex: 1 30%
+
+			ul
+				+flex
+				+flex-wrap
+				margin-bottom: 13px
+				
+				&.ingredients
+					+flex-direction-column
+					
+				&.share-this-recipe
+					+flex-direction-row
+
+					li
+						padding-right: 4px
+
+						a
+							font-size: 24px
+							color: #393A3D
+
+							&:hover
+								color: #5D9E9B
+
+		.main-column
+			order: 3
+			flex: 1 70%
+
+			.header
+				+flex
+
+				position: relative
+
+				h2
+					flex: 2 80%
+					font-size: 48px
+					line-height: 44px
+					margin: 13px 0
+
+					span
+						display: block
+
+						font-family: "Josefin Light"
+						font-size: 24px
+						line-height: 36px
+
+						margin: 13px 0
+
+				.tooltips
+					span
+						top: -39px
+						right: 0
+
+						&:after
+							right: 10%
+
+			ul
+				margin-bottom: 13px
+				
+				&.cooking-time
+					+flex
+					margin: 13px 0
+					
+					li
+						position: relative
+						text-align: center
+
+						&.timeline
+							top: 35px
+							
+							width: 84px
+							border-top: 1px dashed #393A3D
+						
+						.time
+							+border-radius-50-percent
+
+							display: block
+
+							width: 70px
+							height: 70px
+
+							background-color: #5D9E9B
+							color: #C8DBBF
+
+							padding: 24px 4px
+							margin-bottom: 7px
+
+			.instructions
+				margin-bottom: 13px
+
+				.created-on
+					color: #BFBFBF
+					font-size: 17px
+					margin-top: 13px
+
+
+			.review-column
+				border-top: 1px dashed #5D9E9B
+
+				.rating
+
+					&:not(:checked) 
+						> input
+							position: absolute
+							top: -9999px
+							clip: rect(0, 0, 0, 0)
+				
+
+					&:not(:checked) 
+						> label
+							width: 24px
+
+							float: right
+
+							overflow: hidden
+							white-space: nowrap
+							cursor: pointer
+
+							font-size: 150%
+							line-height: 1.2
+							color:  #dfdfdf
+
+							margin-right: 3px
+
+
+					&:not(:checked) 
+						> label:before
+							content: '★'
+
+
+					> input:checked ~ label
+						color: crimson
+
+
+					&:not(:checked) > label:hover,
+					&:not(:checked) > label:hover ~ label
+						color: crimson
+
+
+					> input:checked + label:hover,
+					> input:checked + label:hover ~ label,
+					> input:checked ~ label:hover,
+					> input:checked ~ label:hover ~ label,
+					> label:hover ~ input:checked ~ label
+						color: crimson
+
+
+					> label:active
+						position: relative
+						top: 2px
+						left: 2px
+				
+
+				.reviews
+					margin-bottom: 13px
+					
+					.review
+						font-size: 17px
+
+						&:first-of-type
+							display: none
+
+						.author
+							span
+								color: #BFBFBF
+
+					.message
+						color: #5D9E9B
+
+				.review-editor
+					border-top: 1px dashed #5D9E9B
+
+					.review-form
+						.ng-invalid.ng-dirty
+							border-color: #D90048
+
+						.ng-valid.ng-dirty
+							border-color: #C8DBBF
+
+						textarea
+							width: 100%
+							height: 78px
+
+						label
+							padding-bottom: 7px
+
+						input
+							width: 100%
+
+						button
+							margin: 13px 0
+
+					.select-form
+						position: relative
+
+						select
+							width: 96px
+
+						span
+							color: #D90048
+							position: absolute
+							top: 7px
+							left: 76px
+							pointer-events: none

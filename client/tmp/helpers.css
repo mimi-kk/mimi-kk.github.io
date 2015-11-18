@@ -1,0 +1,62 @@
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: block;
+  clear: both; }
+
+.validation-error {
+  color: #D90048; }
+
+.ng-invalid.ng-dirty.ng-invalid-required {
+  width: 100%; }
+
+.ng-invalid-required {
+  border-color: #D90048; }
+
+.ng-valid.ng-dirty {
+  border-color: #C8DBBF; }
+
+.ng-pristine {
+  border-color: #bfbfbf; }
+
+.tooltips {
+  color: #D90048;
+  padding: 13px; }
+  .tooltips span {
+    position: absolute;
+    visibility: hidden;
+    width: 187px;
+    height: 36px;
+    border-radius: 5px;
+    background: #D90048;
+    color: #E1FCEB;
+    font-family: "Josefin Regular";
+    text-align: center;
+    line-height: 36px; }
+    .tooltips span:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      width: 0;
+      height: 0;
+      border-top: 8px solid #D90048;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      margin-left: -8px; }
+  .tooltips:hover span {
+    visibility: visible; }
+
+@-webkit-keyframes glow {
+  from {
+    background-color: #46807D;
+    -webkit-box-shadow: 0 0 9px #333; }
+  50% {
+    background-color: #5D9E9B;
+    -webkit-box-shadow: 0 0 18px #5D9E9B; }
+  to {
+    background-color: #46807D;
+    -webkit-box-shadow: 0 0 9px #333; } }
+
+.glow {
+  -webkit-animation-name: glow;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite; }

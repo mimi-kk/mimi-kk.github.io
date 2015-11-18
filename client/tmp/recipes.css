@@ -1,0 +1,72 @@
+#recipes-overview {
+  margin: 0 auto;
+  width: 80%; }
+  #recipes-overview .recipes {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center; }
+    #recipes-overview .recipes .recipe {
+      position: relative;
+      overflow: hidden;
+      list-style-type: none;
+      width: 218px;
+      height: 218px;
+      margin: 13px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      #recipes-overview .recipes .recipe a {
+        color: black;
+        display: block;
+        width: 100%;
+        height: 100%; }
+      #recipes-overview .recipes .recipe .caption {
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center; }
+        #recipes-overview .recipes .recipe .caption h3 {
+          font-size: 36px;
+          line-height: 42px; }
+        #recipes-overview .recipes .recipe .caption p {
+          font-size: 19px;
+          line-height: 24px;
+          font-family: "Josefin Regular"; }
+      #recipes-overview .recipes .recipe .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(225, 252, 235, 0.7);
+        padding: 13px; }
+      #recipes-overview .recipes .recipe:hover {
+        cursor: pointer; }
+        #recipes-overview .recipes .recipe:hover .caption {
+          opacity: 1; }
+      #recipes-overview .recipes .recipe.add-recipe {
+        background-color: #E1FCEB;
+        color: white;
+        font-family: "Amatic SC Regular";
+        font-size: 218px;
+        line-height: 198px;
+        text-align: center; }
+        #recipes-overview .recipes .recipe.add-recipe a {
+          color: #5D9E9B;
+          display: block; }

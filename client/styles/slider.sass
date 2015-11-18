@@ -1,0 +1,87 @@
+@import mixins
+
+.slider
+	position: relative
+	overflow: hidden
+	width: 100%
+	height: 470px
+	background: #393A3D
+
+	.slide
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		margin: auto
+
+	.arrow
+		position: absolute
+		width: 45%
+		height: 100%
+		cursor: pointer
+		background: url(../images/slider/blank.gif) no-repeat
+		opacity: 0.2
+		transition: 0.2s linear all
+
+		&.prev
+			left: 0
+			background-position: 3% 50%
+			background-image: url(../images/slider/paddle_prev_999.png)
+
+			&:hover 
+				opacity: 1
+				background-image: url(../images/slider/paddle_prev_fff.png)
+
+		&.next
+			right: 0
+			background-position: 97% 50%
+			background-image: url(../images/slider/paddle_next_999.png)
+
+			&:hover 
+				opacity: 1
+				background-image: url(../images/slider/paddle_next_fff.png)
+
+	.nav 
+		position: absolute
+		text-align: center
+		z-index: 2
+		right: 0
+		bottom: 0
+		left: 0
+
+		.wrapper 
+			width: 100%
+			padding: 13px
+			margin: 0 auto
+
+		.dots
+			width: 100%
+			margin: 0
+
+			.dot, a
+				display: inline-block
+
+			.dot
+				width: 13px
+				height: 13px
+				margin: 0 7px
+
+				a
+					+box-shadow
+					+border-radius-50-percent
+					+transition-25-ms
+					
+					overflow: hidden
+					
+					width: 7px
+					height: 7px
+					
+					border: 1px solid
+					border-color: #FFF
+					background-color: transparent
+
+					&.active
+						background: #FFF
+						border-color: #FFF

@@ -1,0 +1,73 @@
+@import "mixins"
+
+.editor
+	width: 80%
+
+	.recipe-form
+		.flow-button
+			border: none
+			
+		.drop
+			border: 1px dashed #D90048
+			height: 109px
+			text-align: center
+			padding: 42px
+			color: #BFBFBF
+
+		.preview
+			+flex
+			+flex-direction-row
+			+flex-wrap
+
+			width: 100%
+			margin: 7px 0
+
+			li
+				margin-right: 13px
+				
+				&:last-child
+					margin: 0
+				
+				p
+					.preview-title
+						font-size: 13px
+
+					.remove-field
+						vertical-align: middle
+
+				img
+					height: 109px
+
+		input
+			margin-bottom: 7px
+			
+
+			&.title
+				width: 100%
+
+			&.lead
+				width: 100%
+
+		textarea
+			width: 100%
+			height: 218px
+
+		.cooking-time
+			input
+				margin-right: 7px
+
+		.add-field
+			color: #5D9E9B
+			line-height: 24px
+			padding: 0 7px
+
+		.remove-field
+			color: #D90048
+			padding: 7px
+
+		.buttons
+			+flex
+			+justify-content-end
+
+			button
+				margin-right: 13px

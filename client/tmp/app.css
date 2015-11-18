@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+  width: 100%; }
+  body h1, body h2, body h3, body h4 {
+    font-family: "Amatic SC Bold"; }
+  body a {
+    color: #393A3D; }
+    body a:hover {
+      color: #5D9E9B; }

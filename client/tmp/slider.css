@@ -1,0 +1,75 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 470px;
+  background: #393A3D; }
+  .slider .slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto; }
+  .slider .arrow {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    cursor: pointer;
+    background: url(../images/slider/blank.gif) no-repeat;
+    opacity: 0.2;
+    transition: 0.2s linear all; }
+    .slider .arrow.prev {
+      left: 0;
+      background-position: 3% 50%;
+      background-image: url(../images/slider/paddle_prev_999.png); }
+      .slider .arrow.prev:hover {
+        opacity: 1;
+        background-image: url(../images/slider/paddle_prev_fff.png); }
+    .slider .arrow.next {
+      right: 0;
+      background-position: 97% 50%;
+      background-image: url(../images/slider/paddle_next_999.png); }
+      .slider .arrow.next:hover {
+        opacity: 1;
+        background-image: url(../images/slider/paddle_next_fff.png); }
+  .slider .nav {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .slider .nav .wrapper {
+      width: 100%;
+      padding: 13px;
+      margin: 0 auto; }
+    .slider .nav .dots {
+      width: 100%;
+      margin: 0; }
+      .slider .nav .dots .dot, .slider .nav .dots a {
+        display: inline-block; }
+      .slider .nav .dots .dot {
+        width: 13px;
+        height: 13px;
+        margin: 0 7px; }
+        .slider .nav .dots .dot a {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          -webkit-transition: background-color 0.25s, border-color 0.25s;
+          -moz-transition: background-color 0.25s, border-color 0.25s;
+          transition: background-color 0.25s, border-color 0.25s;
+          overflow: hidden;
+          width: 7px;
+          height: 7px;
+          border: 1px solid;
+          border-color: #FFF;
+          background-color: transparent; }
+          .slider .nav .dots .dot a.active {
+            background: #FFF;
+            border-color: #FFF; }

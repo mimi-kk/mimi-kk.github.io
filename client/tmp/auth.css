@@ -1,0 +1,23 @@
+.auth {
+  margin: 13px auto;
+  width: 327px;
+  padding-bottom: 13px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column; }
+  .auth * {
+    width: 100%; }
+  .auth h3 {
+    font-size: 36px; }
+  .auth h4 {
+    margin: 13px 0;
+    font-size: 26px;
+    line-height: 30px; }
+  .auth p {
+    margin: 13px 0;
+    font-family: "Josefin Regular";
+    font-size: 19px;
+    line-height: 26px; }

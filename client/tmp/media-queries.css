@@ -1,0 +1,58 @@
+@media only screen and (max-device-width: 768px) {
+  body {
+    width: 100%; }
+    body h1, body h2, body h3, body h4 {
+      font-weight: normal; }
+    body header {
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center; }
+      body header #search {
+        width: 254px; }
+    body main #recipes-overview .recipes .recipe {
+      width: 254px;
+      height: 254px; }
+      body main #recipes-overview .recipes .recipe .caption {
+        opacity: 1;
+        justify-content: initial;
+        -webkit-justify-content: initial;
+        -moz-justify-content: initial; }
+      body main #recipes-overview .recipes .recipe .overlay {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 100%; }
+    body main .recipe-description .slider {
+      height: 302px; }
+    body main .recipe-description .recipe-form input {
+      width: 100%; }
+    body main .recipe-description .recipe-form .image-column .drop {
+      padding: 30px; }
+    body main .recipe-description .content {
+      width: 100%;
+      padding: 0 26px; }
+      body main .recipe-description .content .head-column ul li {
+        flex: 1 100%; }
+      body main .recipe-description .content .side-column {
+        flex: 1 100%;
+        border-bottom: 1px dashed #5D9E9B; }
+        body main .recipe-description .content .side-column ul.ingredients {
+          flex-direction: column;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column; }
+      body main .recipe-description .content .main-column {
+        flex: 1 100%; }
+        body main .recipe-description .content .main-column ul.cooking-time {
+          flex-direction: column;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column; }
+          body main .recipe-description .content .main-column ul.cooking-time .time-description {
+            position: absolute;
+            top: 23px;
+            left: 180px; }
+          body main .recipe-description .content .main-column ul.cooking-time .timeline {
+            left: 83px; }
+            body main .recipe-description .content .main-column ul.cooking-time .timeline:last-child {
+              display: none; }
+    body main .tooltips span {
+      display: none; } }

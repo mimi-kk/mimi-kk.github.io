@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "angular-socialshare": "0.1.14",
+    "angular-touch": "1.4.7",
+    "angularfire": "1.1.2",
+    "browser-sync": "2.7.13",
+    "firebase": "2.3.0",
+    "gulp": "3.9.0",
+    "gulp-sass": "2.0.3",
+    "gulp-scp2": "0.2.0",
+    "jasmine-core": "2.3.4",
+    "karma": "0.13.11",
+    "karma-chrome-launcher": "0.2.1",
+    "karma-jasmine": "0.3.6"
+  }
+}
